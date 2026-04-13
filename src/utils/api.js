@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000" });
+const API = axios.create({ baseURL: "https://thermal-spike-dedication-batch-7-backend-utc1.onrender.com" });
 
 export const predictThermalSpike = (payload) =>
   API.post("/api/predict", payload).then(r => r.data);
